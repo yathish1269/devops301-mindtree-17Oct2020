@@ -46,7 +46,7 @@ git checkout new-banch-name
 git push --set-upstream origin new-banch-name
 ```
 
-### In to Merge Branch, please checkout to your Primary where you want other banch to be merge. 
+### In Order to Merge Branch, please checkout to your Primary where you want other banch to be merge. 
 ```
 git checkout main 
 git merge new-banch-name -m "Merging new-banch-name into Main Branch"
