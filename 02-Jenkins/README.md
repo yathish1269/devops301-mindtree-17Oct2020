@@ -28,3 +28,25 @@ nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
 ```
  cat /root/.jenkins/secrets/initialAdminPassword
 ```
+
+
+### Git Pull / Clone my repo:
+```
+sudo su - 
+git clone https://github.com/amitvashisttech/devops301-mindtree-17Oct2020.git
+cd devops301-mindtree-17Oct2020/02-Jenkins/petclinic-code 
+```
+
+### Install Maven Package Builder
+```
+apt-get install maven -y 
+mvn --version
+```
+
+### Let's Build our Petclinic Code with Maven
+```
+mvn clean
+mvn compile
+mvn test
+mvn package
+```
