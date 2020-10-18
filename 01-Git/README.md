@@ -57,3 +57,10 @@ git merge new-banch-name -m "Merging new-banch-name into Main Branch"
 git config credential.helper store
 git push 
 ```
+
+
+### Git Tags
+```
+git tag myrelease_2020_Oct_18_v2
+git push --tags
+```
