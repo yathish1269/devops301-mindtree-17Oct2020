@@ -1,6 +1,11 @@
 # Jenkins Deployment & Configuration
 
 
+### First you have to be Super User : root
+```
+sudo su - 
+```
+
 ### Download Jenkins & Install Java JDK
 ```
   mkdir 02-Jenkins
@@ -21,5 +26,5 @@ nohup  java -jar /root/jenkins.war --httpPort=9090 > output.txt &
 
 ### Get the initial Credentials
 ```
- cat .jenkins/secrets/initialAdminPassword
+ cat /root/.jenkins/secrets/initialAdminPassword
 ```
