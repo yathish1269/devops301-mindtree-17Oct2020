@@ -1,0 +1,505 @@
+    1  ls
+    2  ip addr 
+    3  apt-get install git -y 
+    4  ls
+    5  git init --bare my-project.git 
+    6  ls
+    7  cd my-project.git/
+    8  ls
+    9  cd ,,
+   10  cd ..
+   11  ks
+   12  ls
+   13  rm -rf my-project.git 
+   14  ls
+   15  git clone https://github.com/amitvashisttech/devops301-mindtree-17Oct2020.git
+   16  ls
+   17  cd devops301-mindtree-17Oct2020/
+   18  ls
+   19  mkdir 01-Git
+   20  ls
+   21  cd 01-Git/
+   22  ls
+   23  cd ..
+   24  ls
+   25  rm -rf 01-Git/
+   26  ls
+   27  echo "Hello World" > Hello.txt
+   28  ls
+   29  ls -ltr 
+   30  git status 
+   31  git add Hello.txt 
+   32  git status 
+   33  git commit
+   34  git status 
+   35  git log 
+   36  ls
+   37  vim Hello.txt 
+   38  git status 
+   39  git add Hello.txt
+   40  git status 
+   41  git log 
+   42  git config global --edit 
+   43  git config --global  user.name "Amit Vashist"
+   44  git config --global  user.email "amitvashist7@outlook.com"
+   45  git config --list  
+   46  ls
+   47  cd 
+   48  ls
+   49  ls -a 
+   50  vim .gitconfig 
+   51  ls
+   52  cd devops301-mindtree-17Oct2020/
+   53  git commit 
+   54  git config --global  core.editior "vi"
+   55  git config --list 
+   56  git config --global  help.autocorrect  1
+   57  git config --list 
+   58  ls
+   59  git commit 
+   60  git config --global  core.editior "vim"
+   61  git commit 
+   62  git --version 
+   63  git config --global core.editor vi 
+   64  git commit 
+   65  ls
+   66  history 
+   67  git commit 
+   68  git logs
+   69  ls
+   70  history 
+   71  ls
+   72  vim README-1.md
+   73  history 
+   74  vim README-1.md
+   75  ls
+   76  git add README-1.md 
+   77  git commit -m "New file - README-1.md"
+   78  git status 
+   79  git push 
+   80  ls
+   81  cat README-1.md 
+   82  git status 
+   83  git log 
+   84  git config --list 
+   85  scd 
+   86  ls
+   87  cd 
+   88  ls
+   89  ls -ltr 
+   90  echo  "hello" hello.txt
+   91  echo  "hello" > hello.txt
+   92  ls -ltr 
+   93  ls 
+   94  ls -a 
+   95  git status 
+   96  cd devops301-mindtree-17Oct2020/
+   97  ls -a 
+   98  git status 
+   99  git logs 
+  100  cd 
+  101  cd /tmp/
+  102  l;s
+  103  ls
+  104  cd devops301-mindtree-17Oct2020
+  105  ls 
+  106  cd - 
+  107  ls
+  108  cd devops301-mindtree-17Oct2020/
+  109  cd 
+  110  cd /usr/share/local
+  111  cd /usr/share/
+  112  ls
+  113  cd file/
+  114  ls
+  115  cd magic/
+  116  ls
+  117  pwd
+  118  cd 
+  119  ls
+  120  pwd
+  121  exit 
+  122  ls
+  123  mkdir 02-Jenkins
+  124  ls
+  125  apt-get install default-jdk -y 
+  126  apt-get update -y 
+  127  apt-get install default-jdk -y 
+  128  java -version 
+  129  wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war
+  130  ls
+  131  mv jenkins.war /root/
+  132  ls
+  133  cd 
+  134  ls
+  135  pwd
+  136  nohup java -jar jenkins.war --httpPort=9090 > output.txt & 
+  137  tail -f output.txt 
+  138  ps -ef | grep -i jenkins 
+  139  cat /root/.jenkins/secrets/initialAdminPassword
+  140  ls
+  141  cd devops301-mindtree-17Oct2020/
+  142  ls
+  143  cd 02-Jenkins/
+  144  ls
+  145  vim README.md
+  146  ls
+  147  cd ..
+  148  ls
+  149  git add . ; git commit -m "02-Jenkins"; git push 
+  150  cat /root/.jenkins/secrets/initialAdminPassword
+  151  ls
+  152  cd 02-Jenkins/
+  153  ls
+  154  vim README.md 
+  155  ls
+  156  cd ..
+  157  ls
+  158  git add . ; git commit -m "02-Jenkins"; git push 
+  159  ls -ltr 
+  160  date
+  161  cd 
+  162  ls
+  163  cd /
+  164  ls
+  165  git clone https://github.com/amitvashisttech/devops-accenture-2020Oct12.git
+  166  ls
+  167  cd 
+  168  ls
+  169  cd devops301-mindtree-17Oct2020/
+  170  ls
+  171  cd 02-Jenkins/
+  172  ls
+  173  cp -rf /devops-accenture-2020Oct12/02-Jenkins/petclinic-code . 
+  174  ls
+  175  cd ..
+  176  ls
+  177  git add . ; git commit -m "02-Jenkins/Petclinic-Code"; git push 
+  178  ls
+  179  cd 02-Jenkins/
+  180  ls
+  181  cd petclinic-code/
+  182  ls
+  183  rm -rf Dockerfile docker-compose.yaml 
+  184  ls
+  185  cd 
+  186  ls
+  187  cd devops301-mindtree-17Oct2020/
+  188  ls
+  189  apt-get install maven -y 
+  190  mvn --version 
+  191  ls
+  192  cd 02-Jenkins/
+  193  ls
+  194  cd petclinic-code/
+  195  ls
+  196  cd ../../
+  197  ls
+  198  git add . ; git commit -m "02-Jenkins/Petclinic-Code"; git push 
+  199  ls
+  200  cd 02-Jenkins/petclinic-code/
+  201  ls
+  202  mvn --help 
+  203  mvn cleans
+  204  ls
+  205  mvn clean 
+  206  mvn compile
+  207  mvn test
+  208  mvn package
+  209  ls
+  210  cd target/
+  211  ls
+  212  cd ..
+  213  ls
+  214  mvn clean 
+  215  ls
+  216  cd ../../
+  217  ls
+  218  git status 
+  219  ls
+  220  cd 02-Jenkins/
+  221  ls
+  222  cd petclinic-code/
+  223  ls
+  224  cd ../
+  225  ls
+  226  vim README.md 
+  227  cd ../;git config --list 
+  228  cd - 
+  229  vim README.md 
+  230  ls
+  231  cd petclinic-code/
+  232  ls
+  233  pwd
+  234  vim README.md 
+  235  cd - 
+  236  vim README.md 
+  237  ls
+  238  cd ..
+  239  ls
+  240  git add . ; git commit -m "Updated : Readme - Petclinic-Code"; git push 
+  241  mvn
+  242  which mvn 
+  243  ls
+  244  cd 
+  245  cd .jenkins/
+  246  ls
+  247  cd workspace/
+  248  ls
+  249  cd petclinic-code-freestyle/
+  250  ls
+  251  mvn clean 
+  252  ls
+  253  ls  02-Jenkins/petclinic-code/pom.xml 
+  254  mvn clean -f 02-Jenkins/petclinic-code/pom.xml
+  255  ls -ltr  /root/.jenkins/workspace/petclinic-code-freestyle/02-Jenkins/petclinic-code/target/petclinic.war
+  256  which mvn 
+  257  mvn --version 
+  258  ls
+  259  cd 
+  260  cd .jenkins/
+  261  ls
+  262  cd jobs/
+  263  ls
+  264  cd petclinic-code-freestyle/
+  265  ls
+  266  cd builds/
+  267  ls
+  268  cd 6/
+  269  ls
+  270  cd archive/
+  271  ls
+  272  cd 02-Jenkins/
+  273  ls
+  274  cd petclinic-code/
+  275  ls
+  276  cd target/
+  277  ls
+  278  cd ..
+  279  ls
+  280  cd ../../../..
+  281  l
+  282  ls -ltr 6/archive/02-Jenkins/petclinic-code/target/petclinic.war 
+  283  ls -ltr 7/archive/02-Jenkins/petclinic-code/target/petclinic.war 
+  284  cd 
+  285  ls
+  286  wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.56/bin/apache-tomcat-8.5.56.zip
+  287  apt-get install unzip -y 
+  288  ls
+  289  unzip apache-tomcat-8.5.56.zip 
+  290  ls
+  291  cp -rf apache-tomcat-8.5.56 /opt/tomcat
+  292  ls
+  293  cd /opt/tomcat/
+  294  ls
+  295  ls -ltr bin/catalina.sh 
+  296  chmod +x bin/catalina.sh 
+  297  ls -ltr bin/catalina.sh 
+  298  netstat -tulnp 
+  299  ./bin/catalina.sh start 
+  300  netstat -tulnp 
+  301  ps -ef | grep -i tomcat 
+  302  ls
+  303  cd conf/
+  304  ls
+  305  cat tomcat-users.xml 
+  306  cat tomcat-users.xml | grep -E "rolename|username" | grep -v define
+  307  ls
+  308  vim tomcat-users.xml 
+  309  ls
+  310  cd ..
+  311  ls
+  312  ./bin/catalina.sh stop 
+  313  ./bin/catalina.sh start
+  314  ls
+  315  vim webapps/manager/META-INF/context.xml 
+  316  ./bin/catalina.sh stop
+  317  ./bin/catalina.sh start
+  318  ls
+  319  cd ..
+  320  cd 
+  321  ls
+  322  history 
+  323  ls
+  324  cd devops301-mindtree-17Oct2020/
+  325  ls
+  326  mkdir 03-Tomcat
+  327  cd 03-Tomcat/
+  328  ls
+  329  vim README.md
+  330  ls
+  331  cp -rf /opt/tomcat/conf/tomcat-users.xml . 
+  332  cp -rf /opt/tomcat/webapps/manager/META-INF/context.xml . 
+  333  cd 
+  334  ls
+  335  cd - 
+  336  vim README.md 
+  337  ls
+  338  cd ..
+  339  ls
+  340  git add . ; git commit -m "Updated : Tomcat"; git push 
+  341  ls
+  342  cat 03-Tomcat/tomcat-users.xml 
+  343  ls
+  344  cd 03-Tomcat/
+  345  ls
+  346  vim README.md 
+  347  ls
+  348  cd ..
+  349  ls
+  350  git add . ; git commit -m "Updated : Tomcat Deployment"; git push 
+  351  ls
+  352  apt-get install dos2unix -y 
+  353  init 0 
+  354  ls
+  355  cd devops301-mindtree-17Oct2020/
+  356  ls
+  357  mkdir 04-Docker/00-Setup -p 
+  358  vim 04-Docker/00-Setup/docker-install.sh
+  359  chmod +x 04-Docker/00-Setup/docker-install.sh 
+  360  git pull 
+  361  git add . ; git commit -m "Docker Setup"; git push 
+  362  ls
+  363  cd 04-Docker/00-Setup/
+  364  ls
+  365  ./docker-install.sh 
+  366  ll
+  367  docker version 
+  368  docker run busybox echo "Welcome to the world of Docker Containers.!"
+  369  docker images 
+  370  docker run busybox echo "Test - 2"
+  371  docker --help
+  372  docker images
+  373  docker ps 
+  374  docker ps -a
+  375  docker run busybox echos "Test - 3"
+  376  docker ps -a
+  377  docker pull ubuntu:16.04
+  378  docker images 
+  379  docker run -it ubuntu:16.04 
+  380  docker images 
+  381  docker ps 
+  382  docker run -it ubuntu:16.04 
+  383  docker ps 
+  384  docker run -it ubuntu:16.04 
+  385  docker ps 
+  386  docker ps -a
+  387  docker attach 539bcdcf8839
+  388  docker ps 
+  389  docker exec 0197e2c42560 ls 
+  390  docker exec 0197e2c42560 cat amitvashist/hello.txt
+  391  history 
+  392  ls
+  393  vim Day3-History.txt
+  394  ls
+  395  c d..
+  396  cd ../../
+  397  l
+  398  git add . ; git commit -m "Dockee - Update 2"; git push 
+  399  docker ps 
+  400  docker ps -a
+  401  docker start 539bcdcf8839
+  402  docker ps 
+  403  docker attach 539bcdcf8839
+  404* d
+  405  docker kill 539bcdcf8839
+  406  docker start 539bcdcf8839
+  407  docker stop 539bcdcf8839
+  408  docker run -it ubuntu:16.04 
+  409  docker ps 
+  410  docker kill 72b736128314
+  411  docker ps 
+  412  docker  start 72b736128314; docker exec 72b736128314 ls -ltr 
+  413  docker ps 
+  414  docker ps -q
+  415  docker ps -ql
+  416  docker kill $(docker ps -q)
+  417  docker ps 
+  418  docker ps -a 
+  419  docker ps -qa
+  420  docker rm $(docker ps -qa)
+  421  docker ps -a 
+  422  docker images 
+  423  docker rmi busybox
+  424  docker images 
+  425  docker run -it ubuntu:16.04
+  426  ls
+  427  docker ps 
+  428  docker inspect 890dc5b5c4a0
+  429  curl 172.17.0.2
+  430  curl 172.17.0.2/hello.html
+  431  ip addr 
+  432  docker ps 
+  433  docker image 
+  434  docker image s
+  435  docker ps 
+  436  docker images
+  437  docker commit -p -m "First Apache Image" 890dc5b5c4a0 apache-test=image:v1
+  438  docker commit -p -m "First Apache Image" 890dc5b5c4a0 apache-test-image:v1
+  439  docker images
+  440  docker run -it apache-test-image:v1
+  441  docker ps 
+  442  docker inspect a9dc79bce83a
+  443  curl 172.17.0.3
+  444  docker attach a9dc79bce83a
+  445  curl 172.17.0.3
+  446  curl 172.17.0.3/hello.html
+  447  docker attach a9dc79bce83a
+  448  docker ps 
+  449  docker commit -p -m "Second Apache Image" a9dc79bce83a apache-test-image:v2
+  450  ls
+  451  docker kill $(docker ps -aq)
+  452  docker rm $(docker ps -aq)
+  453  docker ps 
+  454  docker images 
+  455  docker run -it apache-test-image:v2
+  456  curl 172.17.0.2
+  457  curl 172.17.0.2/hello.html
+  458  docker run -it apache-test-image:v2
+  459  curl 172.17.0.3/hello.html
+  460  history 
+  461  apt-get update; apt-get install apache2 -y 
+  462  history 
+  463  ls
+  464  cd 04-Docker/
+  465  ls
+  466  cd 00-Setup/
+  467  ls
+  468  history > Day3-History.txt 
+  469  cd ../../
+  470  docker commit -p -m "Second Apache Image" a9dc79bce83a apache-test-image:v2
+  471  git add . ; git commit -m "Dockee - Update 2"; git push 
+  472  ps -ef | grep -i apache2
+  473  kill all apache2
+  474  kill -9 9303
+  475  history 
+  476  which apachw2ctl 
+  477  which apache2ctl 
+  478  docker ps 
+  479  docker attach 175f4d7fba7e
+  480  ls
+  481  docker ps 
+  482  docker run -it apache-test-image:v2
+  483  docker run -itd --name test-apache-01 apache-test-image:v2
+  484  docker ps 
+  485  docker run -itd --name test-apache-02 apache-test-image:v2
+  486  docker run -itd --name test-apache-03 apache-test-image:v2
+  487  docker run -itd --name test-mysql ubuntu 
+  488  docker run -itd --name test-mysql ubuntu:16.04 
+  489  docker run -itd --name test-mysql-2 ubuntu:16.04 
+  490  docker run -itd --name test-mysql-3 ubuntu:16.04 
+  491  docker run -itd  ubuntu:16.04 
+  492  docker ps 
+  493  docker kill test-mysql-3
+  494  docker ps 
+  495  docker kill $(docker ps -aq) 
+  496  docker rm $(docker ps -aq) 
+  497  docker images 
+  498  docker ps 
+  499  docker ps -a
+  500  ls
+  501  cd 04-Docker/
+  502  ls
+  503  mkdir 01-Docker
+  504  ls
+  505  history >> 01-Docker/Docker-history.txt
