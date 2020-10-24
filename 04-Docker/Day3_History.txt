@@ -598,3 +598,64 @@
   598  cd 04-Docker/
   599  ls
   600  history > Day3_History.txt
+  601  cd ..
+  602  git add . ; git commit -m "Dockerfile - Tomcat"; git push 
+  603  ls
+  604  cd 04-Docker/
+  605  ls
+  606  cd 00
+  607  cd 00-Setup/
+  608  ls
+  609  cp -rf docker-install.sh docker-compose.sh
+  610  vim docker-compose.sh 
+  611  ls
+  612  ./docker-compose.sh 
+  613  ls
+  614  docker-compose --version 
+  615  ls
+  616  cd ..
+  617  ls
+  618  cd 02-Dockerfile/
+  619  ls
+  620  cd ..
+  621  ls
+  622  mkdir 03-DockerCompose
+  623  ls
+  624  cp -rf 02-Dockerfile/tomcat 03-DockerCompose/
+  625  ls
+  626  cd 03-DockerCompose/
+  627  ls
+  628  docker kill $(docker ps -aq)
+  629  docker rm $(docker ps -aq)
+  630  docker ps -a 
+  631  ls
+  632  cd tomcat/
+  633  ls
+  634  ll
+  635  cp -rf /root/.jenkins/workspace/petclinic-job-maven-style/02-Jenkins/petclinic-code/target/petclinic.war . 
+  636  ls
+  637  ll
+  638  vim docker-compose.yaml
+  639  docker-compose up -d -build
+  640  docker-compose up -d --build
+  641  docker ps 
+  642  docker-compose ps 
+  643  docker-compose rm
+  644  docker-compose ps 
+  645  docker-compose --help
+  646  docker-compose stop 
+  647  docker-compose ps 
+  648  docker-compose rm
+  649  ls
+  650  cd ..ls
+  651  cd 
+  652  cd - 
+  653  ls
+  654  > petclinic.war 
+  655  ll
+  656  cd ../../../../
+  657  cd devops301-mindtree-17Oct2020/
+  658  ls
+  659  cd 04-Docker/
+  660  ls
+  661  history > Day3_History.txt 
