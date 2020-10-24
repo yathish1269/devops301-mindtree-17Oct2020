@@ -1,0 +1,28 @@
+  363  cd 04-Docker/00-Setup/
+  364  ls
+  365  ./docker-install.sh
+  366  ll
+  367  docker version
+  368  docker run busybox echo "Welcome to the world of Docker Containers.!"
+  369  docker images
+  370  docker run busybox echo "Test - 2"
+  371  docker --help
+  372  docker images
+  373  docker ps
+  374  docker ps -a
+  375  docker run busybox echos "Test - 3"
+  376  docker ps -a
+  377  docker pull ubuntu:16.04
+  378  docker images
+  379  docker run -it ubuntu:16.04
+  380  docker images
+  381  docker ps
+  382  docker run -it ubuntu:16.04
+  383  docker ps
+  384  docker run -it ubuntu:16.04
+  385  docker ps
+  386  docker ps -a
+  387  docker attach 539bcdcf8839
+  388  docker ps
+  389  docker exec 0197e2c42560 ls
+  390  docker exec 0197e2c42560 cat amitvashist/hello.txt
