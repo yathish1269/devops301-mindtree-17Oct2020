@@ -42,7 +42,7 @@ grep -i "PasswordAuthentication" /etc/ssh/sshd_config
 grep -i "PermitRootLogin" /etc/ssh/sshd_config
 ```
 
-## Start the Openssh Service & Test the connection from your base machine 
+## Start the Openssh Service.
 ```
 service ssh restart
 ```
@@ -52,7 +52,7 @@ service ssh restart
 echo "service ssh restart" >> /root/.bashrc
 ```
 
-## Now Come out of the container & Test the connection 
+## Now Come out of the container( Ctl+P+Q )  & Test the connection 
 ```
 docker inspect ansible-R1
 ssh root@<ip>
