@@ -52,7 +52,7 @@ service ssh restart
 echo "service ssh restart" >> /root/.bashrc
 ```
 
-## Now Come out of the container( Ctl+P+Q )  & Test the connection 
+## Now Come out of the container  & Test the connection 
 ```
 docker inspect ansible-R1
 ssh root@<ip>
