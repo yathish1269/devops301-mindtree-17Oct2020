@@ -30,7 +30,7 @@ node {
 
  stage('Getting Ready For Ansible') {
     sh 'cp -rf target/*.war ../../05-Ansible/03-Tomcat/files/'
-    sh 'echo "<h1> Task Build ID: \${env.BUILD_DISPLAY_NAME}</h1>" > ../../05-Ansible/03-Tomcat/files/jenkins.html'
+    sh "echo '<h1> Task Build ID: ${env.BUILD_DISPLAY_NAME}</h1>' > ../../05-Ansible/03-Tomcat/files/jenkins.html"
  }
   
  }
