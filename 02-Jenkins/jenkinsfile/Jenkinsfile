@@ -20,13 +20,28 @@ node {
     sh 'mvn test'
  }
  
-  stage('Maven Package') {
+ stage('Maven Package') {
     sh 'mvn package'
  }
  
-  stage('Archive Artifacts') {
+ stage('Archive Artifacts') {
     archive 'target/*.war'
  }
+
+ stage('Getting Ready For Ansible') {
+    sh 'cp -rf target/*.war ../../05-Ansible/03-Tomcat/files/'
+    sh 'echo '<h1> Task Build ID: ${env.BUILD_DISPLAY_NAME}<h1>' > ../../05-Ansible/03-Tomcat/files/jenkins.html'
+ }
+  
+ }
+
+ def project_ansible="05-Ansible/03-Tomcat/"
+ dir(project_ansible){
+  
+ stage('Ansible Deployment') {
+    sh 'ansible-playbook webserver.yaml'
+ }
+
  }
  
 }
