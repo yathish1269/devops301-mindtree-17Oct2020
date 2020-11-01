@@ -1,0 +1,819 @@
+    1  ls
+    2  ip addr 
+    3  apt-get install git -y 
+    4  ls
+    5  git init --bare my-project.git 
+    6  ls
+    7  cd my-project.git/
+    8  ls
+    9  cd ,,
+   10  cd ..
+   11  ks
+   12  ls
+   13  rm -rf my-project.git 
+   14  ls
+   15  git clone https://github.com/amitvashisttech/devops301-mindtree-17Oct2020.git
+   16  ls
+   17  cd devops301-mindtree-17Oct2020/
+   18  ls
+   19  mkdir 01-Git
+   20  ls
+   21  cd 01-Git/
+   22  ls
+   23  cd ..
+   24  ls
+   25  rm -rf 01-Git/
+   26  ls
+   27  echo "Hello World" > Hello.txt
+   28  ls
+   29  ls -ltr 
+   30  git status 
+   31  git add Hello.txt 
+   32  git status 
+   33  git commit
+   34  git status 
+   35  git log 
+   36  ls
+   37  vim Hello.txt 
+   38  git status 
+   39  git add Hello.txt
+   40  git status 
+   41  git log 
+   42  git config global --edit 
+   43  git config --global  user.name "Amit Vashist"
+   44  git config --global  user.email "amitvashist7@outlook.com"
+   45  git config --list  
+   46  ls
+   47  cd 
+   48  ls
+   49  ls -a 
+   50  vim .gitconfig 
+   51  ls
+   52  cd devops301-mindtree-17Oct2020/
+   53  git commit 
+   54  git config --global  core.editior "vi"
+   55  git config --list 
+   56  git config --global  help.autocorrect  1
+   57  git config --list 
+   58  ls
+   59  git commit 
+   60  git config --global  core.editior "vim"
+   61  git commit 
+   62  git --version 
+   63  git config --global core.editor vi 
+   64  git commit 
+   65  ls
+   66  history 
+   67  git commit 
+   68  git logs
+   69  ls
+   70  history 
+   71  ls
+   72  vim README-1.md
+   73  history 
+   74  vim README-1.md
+   75  ls
+   76  git add README-1.md 
+   77  git commit -m "New file - README-1.md"
+   78  git status 
+   79  git push 
+   80  ls
+   81  cat README-1.md 
+   82  git status 
+   83  git log 
+   84  git config --list 
+   85  scd 
+   86  ls
+   87  cd 
+   88  ls
+   89  ls -ltr 
+   90  echo  "hello" hello.txt
+   91  echo  "hello" > hello.txt
+   92  ls -ltr 
+   93  ls 
+   94  ls -a 
+   95  git status 
+   96  cd devops301-mindtree-17Oct2020/
+   97  ls -a 
+   98  git status 
+   99  git logs 
+  100  cd 
+  101  cd /tmp/
+  102  l;s
+  103  ls
+  104  cd devops301-mindtree-17Oct2020
+  105  ls 
+  106  cd - 
+  107  ls
+  108  cd devops301-mindtree-17Oct2020/
+  109  cd 
+  110  cd /usr/share/local
+  111  cd /usr/share/
+  112  ls
+  113  cd file/
+  114  ls
+  115  cd magic/
+  116  ls
+  117  pwd
+  118  cd 
+  119  ls
+  120  pwd
+  121  exit 
+  122  ls
+  123  mkdir 02-Jenkins
+  124  ls
+  125  apt-get install default-jdk -y 
+  126  apt-get update -y 
+  127  apt-get install default-jdk -y 
+  128  java -version 
+  129  wget https://get.jenkins.io/war-stable/2.249.2/jenkins.war
+  130  ls
+  131  mv jenkins.war /root/
+  132  ls
+  133  cd 
+  134  ls
+  135  pwd
+  136  nohup java -jar jenkins.war --httpPort=9090 > output.txt & 
+  137  tail -f output.txt 
+  138  ps -ef | grep -i jenkins 
+  139  cat /root/.jenkins/secrets/initialAdminPassword
+  140  ls
+  141  cd devops301-mindtree-17Oct2020/
+  142  ls
+  143  cd 02-Jenkins/
+  144  ls
+  145  vim README.md
+  146  ls
+  147  cd ..
+  148  ls
+  149  git add . ; git commit -m "02-Jenkins"; git push 
+  150  cat /root/.jenkins/secrets/initialAdminPassword
+  151  ls
+  152  cd 02-Jenkins/
+  153  ls
+  154  vim README.md 
+  155  ls
+  156  cd ..
+  157  ls
+  158  git add . ; git commit -m "02-Jenkins"; git push 
+  159  ls -ltr 
+  160  date
+  161  cd 
+  162  ls
+  163  cd /
+  164  ls
+  165  git clone https://github.com/amitvashisttech/devops-accenture-2020Oct12.git
+  166  ls
+  167  cd 
+  168  ls
+  169  cd devops301-mindtree-17Oct2020/
+  170  ls
+  171  cd 02-Jenkins/
+  172  ls
+  173  cp -rf /devops-accenture-2020Oct12/02-Jenkins/petclinic-code . 
+  174  ls
+  175  cd ..
+  176  ls
+  177  git add . ; git commit -m "02-Jenkins/Petclinic-Code"; git push 
+  178  ls
+  179  cd 02-Jenkins/
+  180  ls
+  181  cd petclinic-code/
+  182  ls
+  183  rm -rf Dockerfile docker-compose.yaml 
+  184  ls
+  185  cd 
+  186  ls
+  187  cd devops301-mindtree-17Oct2020/
+  188  ls
+  189  apt-get install maven -y 
+  190  mvn --version 
+  191  ls
+  192  cd 02-Jenkins/
+  193  ls
+  194  cd petclinic-code/
+  195  ls
+  196  cd ../../
+  197  ls
+  198  git add . ; git commit -m "02-Jenkins/Petclinic-Code"; git push 
+  199  ls
+  200  cd 02-Jenkins/petclinic-code/
+  201  ls
+  202  mvn --help 
+  203  mvn cleans
+  204  ls
+  205  mvn clean 
+  206  mvn compile
+  207  mvn test
+  208  mvn package
+  209  ls
+  210  cd target/
+  211  ls
+  212  cd ..
+  213  ls
+  214  mvn clean 
+  215  ls
+  216  cd ../../
+  217  ls
+  218  git status 
+  219  ls
+  220  cd 02-Jenkins/
+  221  ls
+  222  cd petclinic-code/
+  223  ls
+  224  cd ../
+  225  ls
+  226  vim README.md 
+  227  cd ../;git config --list 
+  228  cd - 
+  229  vim README.md 
+  230  ls
+  231  cd petclinic-code/
+  232  ls
+  233  pwd
+  234  vim README.md 
+  235  cd - 
+  236  vim README.md 
+  237  ls
+  238  cd ..
+  239  ls
+  240  git add . ; git commit -m "Updated : Readme - Petclinic-Code"; git push 
+  241  mvn
+  242  which mvn 
+  243  ls
+  244  cd 
+  245  cd .jenkins/
+  246  ls
+  247  cd workspace/
+  248  ls
+  249  cd petclinic-code-freestyle/
+  250  ls
+  251  mvn clean 
+  252  ls
+  253  ls  02-Jenkins/petclinic-code/pom.xml 
+  254  mvn clean -f 02-Jenkins/petclinic-code/pom.xml
+  255  ls -ltr  /root/.jenkins/workspace/petclinic-code-freestyle/02-Jenkins/petclinic-code/target/petclinic.war
+  256  which mvn 
+  257  mvn --version 
+  258  ls
+  259  cd 
+  260  cd .jenkins/
+  261  ls
+  262  cd jobs/
+  263  ls
+  264  cd petclinic-code-freestyle/
+  265  ls
+  266  cd builds/
+  267  ls
+  268  cd 6/
+  269  ls
+  270  cd archive/
+  271  ls
+  272  cd 02-Jenkins/
+  273  ls
+  274  cd petclinic-code/
+  275  ls
+  276  cd target/
+  277  ls
+  278  cd ..
+  279  ls
+  280  cd ../../../..
+  281  l
+  282  ls -ltr 6/archive/02-Jenkins/petclinic-code/target/petclinic.war 
+  283  ls -ltr 7/archive/02-Jenkins/petclinic-code/target/petclinic.war 
+  284  cd 
+  285  ls
+  286  wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.56/bin/apache-tomcat-8.5.56.zip
+  287  apt-get install unzip -y 
+  288  ls
+  289  unzip apache-tomcat-8.5.56.zip 
+  290  ls
+  291  cp -rf apache-tomcat-8.5.56 /opt/tomcat
+  292  ls
+  293  cd /opt/tomcat/
+  294  ls
+  295  ls -ltr bin/catalina.sh 
+  296  chmod +x bin/catalina.sh 
+  297  ls -ltr bin/catalina.sh 
+  298  netstat -tulnp 
+  299  ./bin/catalina.sh start 
+  300  netstat -tulnp 
+  301  ps -ef | grep -i tomcat 
+  302  ls
+  303  cd conf/
+  304  ls
+  305  cat tomcat-users.xml 
+  306  cat tomcat-users.xml | grep -E "rolename|username" | grep -v define
+  307  ls
+  308  vim tomcat-users.xml 
+  309  ls
+  310  cd ..
+  311  ls
+  312  ./bin/catalina.sh stop 
+  313  ./bin/catalina.sh start
+  314  ls
+  315  vim webapps/manager/META-INF/context.xml 
+  316  ./bin/catalina.sh stop
+  317  ./bin/catalina.sh start
+  318  ls
+  319  cd ..
+  320  cd 
+  321  ls
+  322  history 
+  323  ls
+  324  cd devops301-mindtree-17Oct2020/
+  325  ls
+  326  mkdir 03-Tomcat
+  327  cd 03-Tomcat/
+  328  ls
+  329  vim README.md
+  330  ls
+  331  cp -rf /opt/tomcat/conf/tomcat-users.xml . 
+  332  cp -rf /opt/tomcat/webapps/manager/META-INF/context.xml . 
+  333  cd 
+  334  ls
+  335  cd - 
+  336  vim README.md 
+  337  ls
+  338  cd ..
+  339  ls
+  340  git add . ; git commit -m "Updated : Tomcat"; git push 
+  341  ls
+  342  cat 03-Tomcat/tomcat-users.xml 
+  343  ls
+  344  cd 03-Tomcat/
+  345  ls
+  346  vim README.md 
+  347  ls
+  348  cd ..
+  349  ls
+  350  git add . ; git commit -m "Updated : Tomcat Deployment"; git push 
+  351  ls
+  352  apt-get install dos2unix -y 
+  353  init 0 
+  354  ls
+  355  docker ps 
+  356  history 
+  357  history | grep -i jenkins 
+  358  ls
+  359  ps -ef | grep -i jenkins 
+  360  ls
+  361  cd devops301-mindtree-17Oct2020/
+  362  ls
+  363  git add . ; git commit -m "JFrog"; git push 
+  364  ls
+  365  cd 04-Docker/
+  366  ls
+  367  cd 03-DockerCompose/
+  368  ls
+  369  cd Jfrog-Artifact/
+  370  ls
+  371  docker-compose --version 
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd ..
+  376  ls
+  377  cat Day3_History.txt 
+  378  ls
+  379  cd 03-DockerCompose/
+  380  ls
+  381  cd sonarqube/
+  382  ls
+  383  vim docker-compose.yaml
+  384  sysctl -w vm.max_map_count=262144
+  385  ;s
+  386  docker-compose up -d 
+  387  docker-compose ps 
+  388  docker ps 
+  389  cd
+  390  ls
+  391  wget https://updates.jenkins.io/download/plugins/sonar/2.8.1/sonar.hpi
+  392  ls
+  393  cd devops301-mindtree-17Oct2020/
+  394  ls
+  395  history > Day4_History.txt
+  396  history 
+  397  ls
+  398  git add . ; git commit -m "SonarQube"; git push 
+  399  ls
+  400  mkdir 05-Ansible
+  401  ls
+  402  cd 05-Ansible/
+  403  ls
+  404  apt-get install ansible sshpass -y 
+  405  ls
+  406  ansible --version 
+  407  ls
+  408  ansible --version >> README.md
+  409  ls
+  410  vim README.md 
+  411  ls
+  412  cd ..
+  413  sl
+  414  cd ls
+  415  ls
+  416  git add . ; git commit -m "05-Ansible"; git push 
+  417  ls
+  418  cd 05-Ansible/
+  419  ls
+  420  mkdir  01-Inventory
+  421  ls
+  422  cd 01-Inventory/
+  423  ls
+  424  vim inventory 
+  425  ls
+  426  cd devops301-mindtree-17Oct2020/
+  427  ls
+  428  cd 04-Docker/
+  429  ls
+  430  cd 03-DockerCompose/
+  431  ls
+  432  cd tomcat/
+  433  ls
+  434  cd ..
+  435  l
+  436  ls
+  437  mkdir Jfrog-Artifact
+  438  ls
+  439  mkdir sonarqube
+  440  ls
+  441  cd Jfrog-Artifact/
+  442  ls
+  443  vim docker-compose.yaml
+  444  ls
+  445  docker-compose up -d 
+  446  docker ps 
+  447  ls
+  448  cat docker-compose.yaml 
+  449  netstat -tulnp 
+  450  docker ps 
+  451  docker-compose ps 
+  452  ip addr 
+  453  docker-compose ps 
+  454  docker-compose log artifactory
+  455  docker ps 
+  456  docker logs e3a34e9c3dc2
+  457  ls
+  458  cd /data/artifactory/
+  459  ls
+  460  cd ..ls
+  461  ls
+  462  cd ..
+  463  ls
+  464  cd ..
+  465  ls
+  466  chown artifactory.artifactory -R /data
+  467  useradd artifactory
+  468  chown artifactory.artifactory -R /data
+  469  ls -ld /data/
+  470  docker logs e3a34e9c3dc2
+  471  docker ps 
+  472  ls
+  473  cd 
+  474  ls
+  475  cd devops301-mindtree-17Oct2020/
+  476  ls
+  477  cd 04-Docker/03-DockerCompose/Jfrog-Artifact/
+  478  ls
+  479  docker-compose ps 
+  480  docker-compose stop artifactory
+  481  docker-compose up 
+  482  chmod 750ls
+  483  docker-compose stop artifactory
+  484  docker-compose rm artifactory
+  485  ls
+  486  vim docker-compose.yaml 
+  487  docker-compose up 
+  488  ls
+  489  cd devops301-mindtree-17Oct2020/
+  490  ls
+  491  cd 05-Ansible/
+  492  ls
+  493  cd 01-Inventory/
+  494  ls
+  495  ip addr 
+  496  ls
+  497  vim inventory 
+  498  ls
+  499  ansible all -i inventory -m ping -u vagrant -k 
+  500  ssh vagrant@172.31.0.100
+  501  ansible all -i inventory -m ping -u vagrant -k 
+  502  ls
+  503  vim /etc/ssh/sshd_config 
+  504  service sshd restart
+  505  ansible all -i inventory -m ping -u vagrant -k 
+  506  cat /root/.ssh/known_hosts 
+  507  cat /root/.ssh/known_hosts |wc -l 
+  508  ls
+  509  vim ansible.cfg 
+  510  ls
+  511  vi /etc/ansible/ansible.cfg 
+  512  cat ansible.cfg 
+  513  ansible all -i inventory -m ping -u vagrant -k 
+  514  cat /root/.ssh/known_hosts |wc -l 
+  515  cat /root/.ssh/known_hosts 
+  516  ansible all -i inventory -m ping -u vagrant -k 
+  517  ansible-doc  -l 
+  518  ls
+  519  df -h 
+  520  uname -a 
+  521  ansible all -i inventory -m command -a "uname -a" -u vagrant -k 
+  522  ls
+  523  cat inventory 
+  524  date 
+  525  netstat -tulnp 
+  526  ansible all -i inventory -m command -a "netstat -tulnp" -u vagrant -k 
+  527  ls
+  528  cd ..
+  529  ls
+  530  cd 01-Inventory/
+  531  ls
+  532  vim inventory 
+  533  ansible all -i inventory -m ping -u vagrant -k 
+  534  cat inventory 
+  535  ansible prod -i inventory -m ping -u vagrant -k 
+  536  ls
+  537  vim inventory 
+  538  ansible web -i inventory -m ping -u vagrant -k 
+  539  ansible ansible -i inventory -m ping -u vagrant -k 
+  540  cd ..
+  541  ls
+  542  cd 01-Inventory/
+  543  ls
+  544  vim inventory 
+  545  ls
+  546  vim ansible.cfg 
+  547  ansible ansible  -m ping -u vagrant -k 
+  548  vim inventory 
+  549  ls
+  550  ansible prod  -m ping 
+  551  ansible prod  -m command "ping -c2 google.com"
+  552  ansible prod  -m command "ping -c 2 google.com"
+  553  ansible prod  -m command -a "ping -c 2 google.com"
+  554  ansible prod  -m command -a "uname -a "
+  555  cd ..
+  556  ls
+  557  history 
+  558  ls
+  559  history > Day4_History.txt
+  560  ls
+  561  cd ..
+  562  ls
+  563  git add . ; git commit -m "05-Ansible"; git push 
+  564  ls
+  565  docker ps 
+  566  docker images 
+  567  docker run -itd ubuntu /bin/bash
+  568  docker run -itd ubuntu:16.04 /bin/bash
+  569  l
+  570  docker ps 
+  571  docker kill c04d5e1b30ba
+  572  docker run -itd --name ansible-R1 ubuntu:16.04 /bin/bash
+  573  docker ps 
+  574  docker attach ansible-R1
+  575  docker inspect ansible-R1
+  576  ssh root@172.17.0.2
+  577  docker attach ansible-R1
+  578  ssh root@172.17.0.2
+  579  ls
+  580  docker attach ansible-R1
+  581  ls
+  582  docker ps 
+  583  docker commit -p -m  "SSH ReadyImage" ansible-R1 ansible-ready-image:v1
+  584  ls
+  585  history 
+  586  docker images 
+  587  docker run -itd --name ansible-R2 ansible-ready-image:v1 /bin/bash
+  588  docker run -itd --name ansible-R3 ansible-ready-image:v1 /bin/bash
+  589  docker ps 
+  590  docker inspect ansible-R2
+  591  docker inspect ansible-R3
+  592  ls
+  593  cd 05-Ansible/
+  594  ls
+  595  cd 01-Inventory/
+  596  ls
+  597  vim inventory 
+  598  ls
+  599  cat inventory 
+  600  ansible docker-container  -m ping 
+  601  ssh root@172.17.0.3
+  602  docker attach ansible-R3
+  603  docker attach ansible-R2
+  604  ansible docker-container  -m ping 
+  605  ls
+  606  cd ..
+  607  ls
+  608  vim README.md 
+  609  cat 01-Inventory/inventory 
+  610  vim README.md 
+  611  ls
+  612  cd ..
+  613  ls
+  614  git add . ; git commit -m "05-Ansible"; git push 
+  615  ls
+  616  vim 05-Ansible/README.md 
+  617  git add . ; git commit -m "05-Ansible"; git push 
+  618  ls
+  619  vim 05-Ansible/README.md 
+  620  ls
+  621  git add . ; git commit -m "05-Ansible"; git push 
+  622  ls
+  623  cd 05-Ansible/
+  624  ls
+  625  cp -rf 01-Inventory 02-Playbook 
+  626  ls
+  627  cd 02-Playbook/
+  628  ls
+  629  cat inventory 
+  630  ls
+  631  vim webserver.yaml
+  632  mkdir files
+  633  vim files/index.html 
+  634  ls
+  635  ansible-playbook webserver.yaml 
+  636  ansible-playbook webserver.yaml -vvv
+  637  ansible-playbook webserver.yaml 
+  638  curl 172.17.0.2
+  639  docker attach ansible-R1
+  640  ls
+  641  vim webserver.yaml 
+  642  ansible-doc command 
+  643  ansible-playbook webserver.yaml 
+  644  curl 172.17.0.2
+  645  curl 172.17.0.3
+  646  curl 172.17.0.4
+  647  ls
+  648  mkdir templates
+  649  ls
+  650  vim templates/info.j2
+  651  ls
+  652  vim webserver.yaml 
+  653  ls
+  654  ansible-playbook webserver.yaml 
+  655  curl 172.17.0.2
+  656  curl 172.17.0.3
+  657  curl 172.17.0.4
+  658  cat files/index.html 
+  659  cat templates/info.j2 
+  660  curl 172.17.0.4/info.html
+  661  curl 172.17.0.3/info.html
+  662  curl 172.17.0.2/info.html
+  663  ls
+  664  cat templates/info.j2 
+  665  ansible-playbook webserver.yaml 
+  666  cat webserver.yaml 
+  667  cat inventory 
+  668  ansible 172.17.0.2 -m setup 
+  669  ls
+  670  vim templates/info.j2 
+  671  ansible 172.17.0.2 -m setup | grep -i uptime
+  672  vim templates/info.j2 
+  673  ansible-playbook webserver.yaml 
+  674  curl 172.17.0.4/info.html
+  675  curl 172.17.0.3/info.html
+  676  curl 172.17.0.2/info.html
+  677  docker ps 
+  678  docker stop ansible-R3
+  679  docker start ansible-R3
+  680  docker run -itd --name ansible-R4 ansible-ready-image:v1 /bin/bash
+  681  docker inspect ansible-R4
+  682  vim inventory 
+  683  ls
+  684  docker attach ansible-R4
+  685  docker run -itd --name ansible-R5 ansible-ready-image:v1 /bin/bash
+  686  docker attach ansible-R5
+  687  ls
+  688  docker images
+  689  vim inventory 
+  690  ansible-playbook webserver.yaml 
+  691  docker ps 
+  692  docker inspect ansible-R3
+  693  ls
+  694  ssh root@172.17.0.4
+  695  docker attach ansible-R3
+  696  ansible-playbook webserver.yaml 
+  697  curl 172.17.0.2/info.html
+  698  curl 172.17.0.3/info.html
+  699  curl 172.17.0.4/info.html
+  700  ls
+  701  docker run -itd --name ansible-R6 ansible-ready-image:v1 /bin/bash
+  702  docker attach ansible-R6
+  703  docker inspect ansible-R6
+  704  ls
+  705  vim inventory 
+  706  docker inspect ansible-R6
+  707  ansible-playbook webserver.yaml 
+  708  curl 172.17.0.3/info.html
+  709  curl 172.17.0.2/info.html
+  710  curl 172.17.0.4/info.html
+  711  curl 172.17.0.6/info.html
+  712  update
+  713  uptime
+  714  ls
+  715  cd ..
+  716  ls
+  717  cd ..
+  718  ls
+  719  git add . ; git commit -m "Playbook"; git push 
+  720  init 0 
+  721  ls
+  722  nohup java -jar jenkins.war --httpPort=9090 > output.txt & 
+  723  docker ps 
+  724  docker ps -a
+  725  ls
+  726  docker ps 
+  727  docker stop d3d289b4e71e
+  728  ls
+  729  docker images 
+  730  docker run -it ansible-ready-image:v1 
+  731  docker ps 
+  732  docker commit -p -m  "SSH ReadyImage" 4b378f56bc10 ansible-ready-image:v2
+  733  ls
+  734  docker ps 
+  735  docker kill 4b378f56bc10
+  736  docker kill $(docker ps -aq)
+  737  docker rm $(docker ps -aq)
+  738  ls
+  739  docker images 
+  740  docker run -itd --name ansible-client-01 -p 30000:80 -p 38080:8080 ansible-ready-image:v2 
+  741  docker ps 
+  742  docker inspect f67d1f17d7ac
+  743  ssh 172.17.0.2
+  744  ls
+  745  docker ps 
+  746  docker run -itd --name ansible-client-02 -p 30002:80 -p 38082:8080 ansible-ready-image:v2 
+  747  docker run -itd --name ansible-client-03 -p 30003:80 -p 38083:8080 ansible-ready-image:v2 
+  748  docker ps 
+  749  ls
+  750  cd devops301-mindtree-17Oct2020/
+  751  ls
+  752  cd 03-Tomcat/
+  753  ls
+  754  cd ..
+  755  ls
+  756  cd 05-Ansible/
+  757  ls
+  758  cp -rf 02-Playbook 03-Tomcat
+  759  ls
+  760  cd 03-Tomcat/
+  761  ls
+  762  cat inventory 
+  763  vim inventory 
+  764  ls
+  765  vim webserver.yaml 
+  766  ls
+  767  vim webserver.yaml 
+  768  ls
+  769  vim inventory 
+  770  ls
+  771  echo "Test Jenkinsfile" > files/jenkins.html
+  772  ls
+  773  cp -rf /root/.jenkins/workspace/petclinic-job-maven-style/02-Jenkins/petclinic-code/target/petclinic.war files/
+  774  ls
+  775  docker ps 
+  776  ansible-playbook webserver.yaml 
+  777  vim webserver.yaml 
+  778  ansible-playbook webserver.yaml 
+  779  vim webserver.yaml 
+  780  ansible-playbook webserver.yaml 
+  781  ls
+  782  vim templates/info.j2 
+  783  ansible-playbook webserver.yaml 
+  784  vim webserver.yaml 
+  785  history | grep -i wget 
+  786  cd 
+  787  ls
+  788  wget http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.58/bin/apache-tomcat-8.5.58.tar.gz
+  789  ls
+  790  tar -zxvf apache-tomcat-8.5.58.tar.gz
+  791  ls
+  792  cd apache-tomcat-8.5.5
+  793  ls
+  794  cd apache-tomcat-8.5.5
+  795  cd apache-tomcat-8.5.58/
+  796  ls
+  797  cd bin/
+  798  ls
+  799  ./catalina.sh status 
+  800  cd 
+  801  ls
+  802  du -sh apache-tomcat-8.5.58
+  803  ls
+  804  cd - 
+  805  cd 
+  806  cd devops301-mindtree-17Oct2020/05-Ansible/03-Tomcat/
+  807  ls
+  808  vim webserver.yaml 
+  809  ansible-playbook webserver.yaml 
+  810  docker ps 
+  811  ls
+  812  cd ..
+  813  du -sh * 
+  814  > 03-Tomcat/files/petclinic.war 
+  815  ls
+  816  cd ..
+  817  ls
+  818  history Day5_History.txt
+  819  history > Day5_History.txt
