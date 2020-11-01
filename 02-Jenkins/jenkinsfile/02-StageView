@@ -1,0 +1,24 @@
+node {
+ 
+ stage('Git CheckOut') {
+    git branch: 'main', url: 'https://github.com/amitvashisttech/devops301-mindtree-17Oct2020.git'
+ }
+ 
+ stage('Maven Clean') {
+    sh 'mvn clean -f 02-Jenkins/petclinic-code/pom.xml'
+ }
+ 
+  stage('Maven Compile') {
+    sh 'mvn compile -f 02-Jenkins/petclinic-code/pom.xml'
+ }
+ 
+ stage('Maven Testing') {
+    sh 'mvn test -f 02-Jenkins/petclinic-code/pom.xml'
+ }
+ 
+  stage('Maven Package') {
+    sh 'mvn package -f 02-Jenkins/petclinic-code/pom.xml'
+ }
+ 
+}
+
